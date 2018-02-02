@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                bash 'mvn test'
+                mvn 'test'
             }
 			post {
 				always {        
