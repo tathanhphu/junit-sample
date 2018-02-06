@@ -8,7 +8,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh "${maven}/bin/mvn test"
+                //sh "${maven}/bin/mvn test"
+		bat "${maven}\\bin\\mvn test"
             }
         }
     }
