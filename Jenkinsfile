@@ -9,7 +9,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 //sh "${maven}/bin/mvn test"
-		bat "${maven}\\bin\\mvn test"
+		bat "mvn test"
             }
         }
     }
