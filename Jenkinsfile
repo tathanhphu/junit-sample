@@ -1,10 +1,14 @@
 pipeline {
     agent any
+	tools { 
+        maven 'maven3.3.9' 
+        jdk 'java1.8.0_144' 
+    }
     stages {
         stage('Build') {
             steps {
                 echo 'Building...'
-                mvn 'test'
+                maven 'test'
             }
         }
     }
